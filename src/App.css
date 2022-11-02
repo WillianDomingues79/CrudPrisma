@@ -1,0 +1,125 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/*====================================================================================================================*/
+button {
+  border: none;
+}
+
+.App {
+  text-align: center;
+}
+
+.container {
+  background-color: #dae0f5;
+  min-height: 95vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.todos {
+  background-color: white;
+  width: 508px;
+  height: 383px;
+  overflow-y: scroll;
+}
+
+.todo {
+  margin-top: 1rem;
+  margin-bottom: -1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.todo p {
+  min-width: 200px;
+  max-width: 200px;
+  text-align: start;
+
+  font-size: 1rem;
+  font-weight: bold;
+  color: #64697b;
+}
+.checkbox {
+  width: 0.1rem;
+  height: 0.1rem;
+  border-radius: 50%;
+
+  border: 2px solid #64697b;
+  box-shadow: none;
+  margin: 10px;
+}
+.header {
+  background-color: #a879e6;
+  width: 508px;
+  height: 60px;
+  box-shadow: 0px 0px 21px -7px rgba(0, 0, 0, 0.3);
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 0.8rem;
+}
+.newTaskButton {
+  border: none;
+  background-color: #a879e6;
+  width: 160px;
+  height: 50px;
+  border-radius: 24px;
+  margin-top: 20px;
+  color: white;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+.inputName {
+  margin-top: 10px;
+  text-align: center;
+  border: none;
+  height: 50px;
+  width: 200px;
+  box-shadow: 0px 0px 21px -7px rgba(0, 0, 0, 0.3);
+}
+input:focus {
+  outline: none;
+}

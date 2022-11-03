@@ -1,4 +1,4 @@
-#root {
+/*#root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
@@ -38,20 +38,25 @@
 
 .read-the-docs {
   color: #888;
-}
+}*/
 
 /*====================================================================================================================*/
+body{
+  background-color: #000;
+}
+
 button {
   border: none;
 }
 
 .App {
   text-align: center;
+  margin-left: 8vh;
 }
 
 .container {
-  background-color: #dae0f5;
-  min-height: 95vh;
+  background-color: #000;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -59,8 +64,9 @@ button {
 }
 .todos {
   background-color: white;
-  width: 508px;
-  height: 383px;
+  width: 85vw;
+  height: 50vh;
+
   overflow-y: scroll;
 }
 
@@ -75,40 +81,31 @@ button {
   min-width: 200px;
   max-width: 200px;
   text-align: start;
-
   font-size: 1rem;
   font-weight: bold;
   color: #64697b;
+  border-bottom: 1px solid black;
 }
-.checkbox {
-  width: 0.1rem;
-  height: 0.1rem;
-  border-radius: 50%;
 
-  border: 2px solid #64697b;
-  box-shadow: none;
-  margin: 10px;
-}
 .header {
-  background-color: #a879e6;
-  width: 508px;
+  background-color: #F7d354;
+  width: 90vw;
   height: 60px;
   box-shadow: 0px 0px 21px -7px rgba(0, 0, 0, 0.3);
   margin: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
   font-size: 0.8rem;
+
 }
 .newTaskButton {
   border: none;
-  background-color: #a879e6;
+  background-color: #F7d354;
   width: 160px;
   height: 50px;
   border-radius: 24px;
-  margin-top: 20px;
-  color: white;
+  margin-top: 40px;
   font-weight: bold;
   font-size: 0.8rem;
 }
@@ -122,4 +119,14 @@ button {
 }
 input:focus {
   outline: none;
+}
+
+.edit {
+  width: 25px;
+  height: 25px;
+}
+
+.trash {
+  width: 25px;
+  height: 25px;
 }
